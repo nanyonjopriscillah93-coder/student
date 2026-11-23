@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ISBAT - Student Dashboard</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="portal.css">
+    <!-- INTERNAL CSS - ONLY FOR QUICK-LINKS GRID -->
+    <style>
+        .quick-links {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .quick-card {
+            background: white; border: 1px solid #ddd; border-radius: 8px;
+            padding: 25px; text-align: center;
+        }
+        .quick-card h3 { color: #1A1A2E; margin-bottom: 8px; }
+        .quick-card p { color: #666; margin-bottom: 12px; }
+        .quick-card a { color: #1A1A2E; font-weight: bold; text-decoration: none; }
+        .quick-card a:hover { color: #FFD700; }
+    </style>
+</head>
+<body>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <h2>ISBAT</h2>
+        <p>University</p>
+        <p><strong>Student:</strong><br>Jane Nakato</p>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="courses.html">My Courses</a>
+            <a href="fees.html">Fee Statement</a>
+        </nav>
+    </div>
+
+    <!-- MAIN AREA -->
+    <div class="main">
+        <h1>Welcome, Jane Nakato</h1>
+        <p class="date">Today's Date: Tuesday, 18 November 2026</p>
+
+        <!-- STATUS BADGE - INLINE CSS ONLY -->
+        <p>Status: <span style="background:#EAF3DE; color:#27500A; 
+        padding:5px 15px; border-radius:20px; font-weight:bold;">Active</span></p>
+
+        <!-- 3 SUMMARY CARDS -->
+        <div class="metrics">
+            <div class="metric-card">
+                <h1>GPA</h1>
+                <p class="value">3.85</p>
+            </div>
+            
+            <div class="metric-card">
+                <h2>Credit Hours</h2>
+                <p class="value">18</p>
+            </div>
+           
+            <div class="metric-card">
+                <h3>Outstanding Fee Balance</h3>
+                <p class="value">UGX 450,000</p>
+            </div>
+        </div>
+
+        <h2>Quick Links</h2>
+        <div class="quick-links">
+            
+            <div class="quick-card">
+                <h3>Dashboard</h3>
+                <p>View your summary and updates</p>
+                <a href="dashboard.html">Go to Dashboard &gt;&gt;</a>
+            </div>
+            
+            <div class="quick-card">
+                <h3>My Courses</h3>
+                <p>View enrolled courses & timetable</p>
+                <a href="courses.html">Go to My Courses &gt;&gt;</a>
+            </div>
+            
+            <div class="quick-card">
+                <h3>Fee Statement</h3>
+                <p>View fees and payments</p>
+                <a href="fees.html">Go to Fee Statement &gt;&gt;</a>
+            </div>
+            
+            <div class="quick-card">
+                <h3>Update Profile</h3>
+                <p>Update your personal details</p>
+                <a href="#">Update Profile &gt;&gt;</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

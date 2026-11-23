@@ -1,0 +1,37 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { font-family: Arial, sans-serif; background: #f4f4f4; color: #333; }
+
+/* SIDEBAR - fixed, 200px, #1A1A2E */
+.sidebar {
+  position: fixed; top: 0; left: 0;
+  width: 200px; height: 100%;
+  background: #1A1A2E; color: white;
+  padding: 20px; text-align: center;
+}
+.sidebar h2 { font-size: 22px; margin-bottom: 5px; color: #FFD700; }
+.sidebar p { margin-bottom: 20px; font-size: 14px; }
+.sidebar nav a { display: block; color: white; text-decoration: none; padding: 12px; margin-bottom: 8px; background: #2A2A4A; border-radius: 5px; font-weight: bold; }
+.sidebar nav a:hover { background: #FFD700; color: #1A1A2E; }
+
+/* MAIN AREA - pushed right by 200px */
+.main { margin-left: 200px; padding: 30px; }
+.main h1 { margin-bottom: 8px; color: #1A1A2E; }
+.main .date { color: #666; margin-bottom: 15px; }
+
+/* 3 SUMMARY CARDS - Flexbox */
+.metrics { display: flex; gap: 15px; margin: 20px 0; flex-wrap: wrap; }
+.metric-card {
+  flex: 1; background: white; border: 1px solid #ddd;
+  border-radius: 8px; padding: 20px; text-align: center;
+}
+.metric-card h3 { color: #1A1A2E; margin-bottom: 8px; font-size: 16px; }
+.metric-card .value { font-size: 28px; font-weight: bold; color: #1A1A2E; }
+
+/* TABLES */
+table { width: 100%; border-collapse: collapse; background: white; margin: 20px 0; }
+th, td { border: 1px solid #ccc; padding: 10px; text-align: center; font-size: 14px; }
+th { background: #1A1A2E; color: white; }
+td { text-align: left; }
+
+h2 { color: #1A1A2E; margin: 25px 0 10px 0; }

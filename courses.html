@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ISBAT - My Courses</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="portal.css">
+    <!-- INTERNAL CSS - ONLY FOR TIMETABLE COLOURS -->
+    <style>
+        .webtech { background: #D6EAF8; font-weight: bold; }
+        .cprog { background: #FDEBD0; font-weight: bold; }
+        .db { background: #D5F5E3; font-weight: bold; }
+        .discrete { background: #E8DAEF; font-weight: bold; }
+        .lunch { background: #EEEEEE; }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>ISBAT</h2>
+        <p>University</p>
+        <p><strong>Student:</strong><br>Jane Nakato</p>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="courses.html">My Courses</a>
+            <a href="fees.html">Fee Statement</a>
+        </nav>
+    </div>
+
+    <div class="main">
+        <h1>My Courses</h1>
+        <p class="date">Semester 1, 2026 - Bachelor of IT</p>
+
+        <h2>Enrolled Courses</h2>
+        <table>
+            <tr><th>Course Code</th><th>Course Name</th><th>Credits</th><th>Lecturer</th><th>Room</th><th>Status</th></tr>
+            <tr><td>BIT1101</td><td>Web Technologies</td><td>3</td><td>Mr. John Kato</td><td>Lab 2</td><td style="background:#E1F5EE; color:#085041; font-weight:bold; text-align:center;">Active</td></tr>
+            <tr><td>BIT1102</td><td>C Programming</td><td>4</td><td>Ms. Sarah Nalule</td><td>Lab 1</td><td style="background:#E1F5EE; color:#085041; font-weight:bold; text-align:center;">Active</td></tr>
+            <tr><td>BIT1103</td><td>Database Systems</td><td>3</td><td>Dr. Peter Okello</td><td>Lab 3</td><td style="background:#E1F5EE; color:#085041; font-weight:bold; text-align:center;">Active</td></tr>
+            <tr><td>BIT1104</td><td>Discrete Mathematics</td><td>3</td><td>Mr. David Ssemwongo</td><td>Room 4</td><td style="background:#E1F5EE; color:#085041; font-weight:bold; text-align:center;">Active</td></tr>
+            <tr><td>BIT1105</td><td>Computer Networks</td><td>3</td><td>Ms. Grace Atim</td><td>Lab 2</td><td style="background:#FAEEDA; color:#633806; font-weight:bold; text-align:center;">Pending</td></tr>
+            <tr><td>BIT1106</td><td>Communication Skills</td><td>2</td><td>Mrs. Mary Achieng</td><td>Room 2</td><td style="background:#E1F5EE; color:#085041; font-weight:bold; text-align:center;">Active</td></tr>
+        </table>
+
+        <h2>Weekly Timetable (Mon - Fri, 8am - 5pm)</h2>
+        <p>Each column = 1 hour. <code>colspan="2"</code> = 2-hour lecture.</p>
+        <table>
+            <tr><th>Day</th><th>8-9</th><th>9-10</th><th>10-11</th><th>11-12</th><th>12-1</th><th>1-2</th><th>2-3</th><th>3-4</th><th>4-5</th></tr>
+            <tr>
+                <td><strong>Monday</strong></td>
+                <td colspan="2" class="webtech">Web Technologies</td>
+                <td>-</td>
+                <td colspan="2" class="discrete">Discrete Maths</td>
+                <td class="lunch">Lunch</td>
+                <td colspan="2" class="cprog">C Programming</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td><strong>Tuesday</strong></td>
+                <td colspan="2" class="db">Database Systems</td>
+                <td colspan="2" class="cprog">C Programming</td>
+                <td>-</td>
+                <td class="lunch">Lunch</td>
+                <td colspan="2" class="webtech">Web Technologies</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td><strong>Wednesday</strong></td>
+                <td colspan="2" class="discrete">Discrete Maths</td>
+                <td>-</td>
+                <td colspan="2" class="db">Database Systems</td>
+                <td class="lunch">Lunch</td>
+                <td>-</td>
+                <td colspan="2" class="cprog">C Programming</td>
+            </tr>
+            <tr>
+                <td><strong>Thursday</strong></td>
+                <td>-</td>
+                <td colspan="2" class="webtech">Web Technologies</td>
+                <td colspan="2" class="db">Database Systems</td>
+                <td class="lunch">Lunch</td>
+                <td colspan="2" class="discrete">Discrete Maths</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td><strong>Friday</strong></td>
+                <td colspan="2" class="cprog">C Programming</td>
+                <td>-</td>
+                <td colspan="2" class="webtech">Web Technologies</td>
+                <td class="lunch">Lunch</td>
+                <td colspan="2" class="db">Database Systems</td>
+                <td>-</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
